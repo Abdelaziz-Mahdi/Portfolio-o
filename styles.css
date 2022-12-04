@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 320px;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+  }
+  
+  section {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-top: 0px;
+    margin-right: 68px;
+    margin-bottom: 0px;
+  }
+  p {
+    width: 288px;
+    height: 126px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+  }
