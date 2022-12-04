@@ -30,11 +30,11 @@ header {
   width: 20px;
   height: 2px;
   background-color: black;
-  margin: 6px 0;
+  margin: 6px;
 }
 
 .menu {
-  height: fit-content;
+  height: 100%;
   padding: 0;
   margin-top: 19px;
   margin-right: 16px;
@@ -153,7 +153,7 @@ p {
   justify-content: center;
   flex-direction: column;
   width: inherit;
-  margin: 0px;
+  margin: 0;
   border: none;
 }
 
@@ -162,7 +162,7 @@ p {
   display: flex;
   justify-self: flex-start;
   align-self: stretch;
-  margin: 0px;
+  margin: 0;
   object-fit: cover;
   border: none;
 }
@@ -176,7 +176,7 @@ p {
 
 h3 {
   border: none;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -196,10 +196,10 @@ h3 {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: #1a2236;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 80%;
@@ -283,7 +283,7 @@ h3 {
 .aboutHeader {
   margin-right: 155px;
   margin-bottom: 20px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .pabout {
@@ -298,7 +298,7 @@ h3 {
   border: none;
   background-color: #1a2236;
   margin-bottom: 40px;
-  padding: 0px;
+  padding: 0;
 }
 
 .btnTextGet {
@@ -351,12 +351,12 @@ h3 {
 .langCardHeader,
 .skillCardHeader,
 .framworksCardHeader {
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: white;
 }
 
 .langCardHeader {
@@ -383,14 +383,14 @@ h3 {
 .langCardList,
 .framworksCardList,
 .skillCardList {
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: -0.0525em;
-  color: #ffffff;
-  padding: 0px;
+  color: white;
+  padding: 0;
   list-style: none;
 }
 
