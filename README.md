@@ -1,41 +1,74 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Portfolio-Website
+<div align="center">
 
-**A portfolio website that runs smoothly on different devices and screen sizes(Current design is for mobile only), this is my second Microverse repository on GitHub.**
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-**Preview**
+  <h3><b>Microverse README Template</b></h3>
 
-**![Mobile-View](https://user-images.githubusercontent.com/107482707/199116609-eee769fe-0c2d-4f25-93a8-ea3a52edf4d0.png)**
+</div>
 
-## Built With
+<!-- TABLE OF CONTENTS -->
 
-- Major languages
--HTML (semantic)
--CSS (flexbox)
+# 📗 Table of Contents
 
-## Getting Started
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-**This is an activity called Set up a 'portfolio-website' project to test the following skills.**
-**
-Understand how to parse a Figma design to create a UI,
-Flexbox to place elements in the page,
-Build a personal portfolio site,
-Use images and backgrounds to enhance the look of the website.**
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [Portfolio-Website-T5] <a name="about-project"></a>
+
+
+**[Portfolio-Website-T5]** A portfolio website that runs smoothly on different devices and screen sizes(Current design is for mobile only).
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+Major languages -HTML (semantic) -CSS (flexbox)
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[Responsive Design]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+This is an activity called Set up a 'portfolio-website' project to test the following skills. ** Understand how to parse a Figma design to create a UI, Flexbox to place elements in the page, Build a personal portfolio site, Use images and backgrounds to enhance the look of the website.**
 
 ### Setup
-- Open the repository [file](https://github.com/Abdelaziz-Ali/portfolio-website.git).
+
+- Open the repository [file](https://github.com/Abdelaziz-Ali/Portfolio-Website-T5).
 - Click on the "Code" button, above the files list.
 - Select one of the three options to copy the URL: HTTPS, SSH key and GitHub CLI.
 - Open the Terminal in the directory you want to copy the project.
 - Type git clone, pastes the URL you copied, and press enter.
 
-### Usage
-to edit this project:
-- Open the repository you cloned with a code editor that you like.
-- Edit the code as you want.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Authors
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
 
 👤 **Abdelaziz Mohamed**
 
@@ -43,22 +76,56 @@ to edit this project:
 - Twitter: [@AbdelazizDV](https://twitter.com/AbdelazizDV)
 - LinkedIn: [in/abdelaziz-ali-dev](https://www.linkedin.com/in/abdelaziz-ali-dev)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Templete used in project provided by (Microverse).
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+
+[Do i have to make changes on this project before using it?]
+
+[You need to modify it to match your clint information]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
