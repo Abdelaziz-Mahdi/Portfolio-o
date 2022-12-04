@@ -21,6 +21,10 @@ header {
   width: 111px;
 }
 
+#hamUl {
+  list-style: none;
+}
+
 .strip {
   width: 20px;
   height: 2px;
@@ -134,7 +138,9 @@ p {
   background-image: url(".png/image_geometry_2.png");
   background-color: white;
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100%;
+  background-size: 100% 100%;
+  background-position: top;
   margin-top: 32px;
+  height: 160px;
+  width: 100%;
 }
