@@ -169,14 +169,14 @@ p {
 
 .infoBox {
   background-color: #1a2236;
-  margin: 0px;
-  border: 0px;
+  margin: 0;
+  border: 0;
   border: none;
 }
 
 h3 {
   border: none;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -199,7 +199,7 @@ h3 {
   margin: 0;
   padding: 0;
   background-color: #1a2236;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 80%;
@@ -264,6 +264,7 @@ h3 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 .btnIcon {
   display: flex;
   margin-left: 10px;
@@ -351,7 +352,7 @@ h3 {
 .langCardHeader,
 .skillCardHeader,
 .framworksCardHeader {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -383,7 +384,7 @@ h3 {
 .langCardList,
 .framworksCardList,
 .skillCardList {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
