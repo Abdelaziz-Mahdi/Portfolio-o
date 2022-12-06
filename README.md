@@ -75,7 +75,7 @@ This is an activity called Set up a 'portfolio-website' project to test the foll
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Conact me Section]**
+- [ ] **[Contact me Section]**
 - [ ] **[Desktop Version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
