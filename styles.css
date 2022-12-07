@@ -656,7 +656,7 @@ label {
   }
 
   #mainHeader ul button:hover {
-    box-shadow: 0px 1px #1a2236;
+    box-shadow: 0 1px #1a2236;
   }
 
   .mnuBtn {
