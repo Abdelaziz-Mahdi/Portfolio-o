@@ -956,6 +956,7 @@ label {
     right: 0;
     top: 620px;
     display: grid;
+    width: 32.3%;
   }
 
   #itemFlow .infoBox {
@@ -964,6 +965,7 @@ label {
 
   #itemFlow .imgContainer {
     order: 2;
+    width: -webkit-fill-available;
   }
 
   .aboutMyself {
