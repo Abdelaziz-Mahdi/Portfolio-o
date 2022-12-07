@@ -188,12 +188,14 @@
     </section>
     <section class="aboutMyself">
       <div class="aboutSection">
-        <h2 class="aboutHeader">About</h2>
+        <div id="aboutP1">
+          <h2 class="aboutHeader">About</h2>
           <p class="pabout">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ea eiusmod
+            <br />
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br />
+            enim ad minim veniam, quis nostrud exercitation ullamco<br />
+            laboris nisi ut aliquip ea eiusmod
           </p>
           <button class="btn myCv">
             <div class="btnTextGet">Get my CV</div>
@@ -201,6 +203,8 @@
               <img src=".png/ic_download.png" alt="download-icon" />
             </div>
           </button>
+        </div>
+        <div id="aboutP2">
           <div class="aboutCards">
             <h4 class="langCardHeader">Languages</h4>
             <ul class="langCardList">
@@ -229,11 +233,13 @@
               <li class="laCardListItem">GitLAb</li>
               <li class="laCardListItem">Terminal</li>
             </ul>
+          </div>
+          <div class="aboutVisual"></div>
         </div>
       </div>
     </section>
     <footer class="contactMe">
-      <header><div class="headerv"></div></header>
+      <header id="footerHeader"><div class="footerHeader"></div></header>
       <section id="formSection">
         <h2>Get started</h2>
         <p>
@@ -243,6 +249,8 @@
         <form action="https://formspree.io/f/xbjbqokr" method="POST">
           <ul>
             <li>
+              <ul id="contactInGrid">
+                <li>
                   <div class="inputDiv">
                     <label for="name">Your name</label>
                     <input
@@ -264,8 +272,12 @@
                       placeholder="Type your email here..."
                     />
                   </div>
+                </li>
+              </ul>
             </li>
             <li>
+              <div id="hideBorder" class="inputDiv">
+                <label id="hide" for="name">Message</label>
                 <textarea
                   name="message"
                   required="true"
@@ -274,6 +286,7 @@
                   placeholder="Enter your message here..."
                   rows="5"
                 ></textarea>
+              </div>
             </li>
             <li>
               <button type="submit" class="btn startCoText">
@@ -283,6 +296,7 @@
           </ul>
         </form>
       </section>
+      <div class="footerV"></div>
       <footer id="contactFooter">
         <div id="footerContainer">
           <button class="myResume">
