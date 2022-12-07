@@ -346,6 +346,13 @@ h3 {
   margin-right: 79px;
 }
 
+#aboutP2 {
+  order: 1;
+  display: grid;
+  grid-template-columns: auto;
+  width: inherit;
+}
+
 .aboutCards {
   margin-bottom: 16px;
   background-color: #1c528a;
@@ -449,6 +456,10 @@ h3 {
   margin-right: 151px;
 }
 
+.contactMe {
+  background-color: #f9f9fa;
+}
+
 #formSection {
   margin: 32px 14px 64px 18px;
 }
@@ -479,6 +490,7 @@ h3 {
   font-size: 16px;
   position: relative;
   margin-bottom: 8px;
+  background-color: white;
 }
 
 .inputDiv:hover {
@@ -555,6 +567,7 @@ label {
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
+  list-style: none;
 }
 
 .myResume {
@@ -582,6 +595,14 @@ label {
 .btnDownload {
   display: flex;
   margin-left: 17px;
+}
+
+#hide {
+  display: none;
+}
+
+#hideBorder {
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -744,6 +765,9 @@ label {
     grid-row-start: 1;
     grid-row-end: 2;
     position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 
   #worksV1 {
@@ -757,9 +781,8 @@ label {
   }
 
   .worksHeader {
-    position: absolute;
-    left: 0;
-    top: 140;
+    position: relative;
+    text-align: end;
     margin: 0;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -848,6 +871,9 @@ label {
     grid-row-start: 2;
     grid-row-end: 3;
     background-image: url(.png/w-image-geometry_1.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
   #item5 {
@@ -879,6 +905,7 @@ label {
     grid-row-end: 4;
     background-image: url(.png/w-image-geometry_2.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom, right;
   }
 
@@ -925,5 +952,245 @@ label {
 
   #itemFlow .imgContainer {
     order: 2;
+  }
+
+  .aboutMyself {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .aboutSection {
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 216px;
+    margin-bottom: 150px;
+    margin-right: 0;
+  }
+
+  #aboutP2 {
+    order: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #aboutP1 {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .aboutHeader {
+    margin-top: 28px;
+    margin-right: 151px;
+    margin-bottom: 30px;
+    margin-left: 96px;
+  }
+
+  .pabout {
+    margin-top: 0;
+    margin-bottom: 42px;
+    margin-left: 96px;
+  }
+
+  .myCv {
+    margin-right: 192px;
+    margin-left: 96px;
+    width: initial;
+  }
+
+  .btnTextGet {
+    margin-top: 22px;
+    margin-bottom: 21px;
+    margin-left: 55px;
+  }
+
+  .btnIconDownload {
+    margin-right: 55px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-left: 24px;
+  }
+
+  .aboutCards,
+  .framworksCard,
+  .skillsCard {
+    margin: 0;
+  }
+
+  .aboutVisual {
+    background-image: url(.png/image_dots_with_teal.png);
+    margin-top: 75px;
+    margin-left: 67px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footerHeader {
+    display: initial;
+    justify-content: initial;
+    height: auto;
+    position: absolute;
+  }
+
+  .footerHeader {
+    background-image: url(".png/image-geometry_6.png");
+    background-color: #f9f9fa;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 351px;
+    width: 263px;
+  }
+
+  #formSection {
+    margin: 135px 446px 0 446px;
+  }
+
+  #formSection h2 {
+    margin: 0 0 40px 0;
+  }
+
+  #formSection p {
+    margin: 0 0 60px 0;
+  }
+
+  #message {
+    border-radius: 4px;
+    border: 1px solid #dfdfe0;
+    position: relative;
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    text-indent: 16px;
+    padding-top: 15px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  #formSection .btn {
+    align-self: center;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  #formSection .startCoText {
+    padding: 22px 42px 22px 42px;
+  }
+
+  .inputDiv {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 8px;
+    background-color: #f9f9fa;
+  }
+
+  input {
+    border-style: none;
+    border: 1px solid #dfdfe0;
+    text-indent: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a2236;
+    margin: 23px 0 8px 0;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  #hide {
+    display: initial;
+  }
+
+  #contactInGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 35px;
+  }
+
+  label {
+    text-indent: 0;
+    margin: 0;
+  }
+
+  .inputDiv:hover {
+    border: none;
+  }
+
+  input:hover {
+    border: 1px solid #1a2236;
+  }
+
+  #contactFooter {
+    padding: 48px 160px 48px 160px;
+  }
+
+  #footerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .myResume {
+    background-color: #1a2236;
+    color: #98dede;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    column-gap: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footerV {
+    background-image: url(.png/image-geometry_7.png);
+    width: 351px;
+    height: 351px;
+    position: relative;
+    z-index: 2;
+    align-self: flex-end;
+    justify-self: end;
+    background-position: left;
+    float: right;
   }
 }
