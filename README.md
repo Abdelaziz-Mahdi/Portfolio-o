@@ -1,13 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-
-  <img src=".png/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -78,6 +70,15 @@ This is an activity called Set up a 'portfolio-website' project to test the foll
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **[Contact me Section]**
+- [ ] **[Desktop Version]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 

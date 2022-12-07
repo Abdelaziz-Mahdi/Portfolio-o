@@ -2,12 +2,13 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  height: auto;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  height: 74px;
+  height: auto;
 }
 
 .headerv {
@@ -29,11 +30,11 @@ header {
   width: 20px;
   height: 2px;
   background-color: black;
-  margin: 6px 0;
+  margin: 6px;
 }
 
 .menu {
-  height: fit-content;
+  height: 100%;
   padding: 0;
   margin-top: 19px;
   margin-right: 16px;
@@ -61,19 +62,28 @@ section {
   margin-top: 30px;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
+}
+
+.midHeader {
   margin-top: 0;
   margin-right: 68px;
   margin-bottom: 0;
 }
 
+.worksHeader {
+  margin-top: 39.9px;
+  margin-left: 16px;
+  margin-right: 123px;
+  margin-bottom: 32px;
+}
+
 p {
-  margin-top: 20px;
-  margin-bottom: 40px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -82,55 +92,34 @@ p {
   letter-spacing: -0.01em;
 }
 
+.pMidSection {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .btn {
-  display: flex;
-  justify-content: center;
   background-color: #1a2236;
   color: white;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 42px;
-  padding-right: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border: none;
 }
 
 .btn:hover {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  color: black;
-  border: 1px solid #1a2236;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  padding-left: 42px;
-  padding-right: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  background-color: black;
+  color: white;
+  filter: invert(100%);
+  border: 1px solid white;
 }
 
 .btn:active {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  color: black;
-  border: 2px solid #1a2236;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  padding-left: 42px;
-  padding-right: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  background-color: black;
+  color: white;
+  filter: invert(100%);
+  border: 2px solid white;
 }
 
 .foterv {
@@ -143,4 +132,295 @@ p {
   margin-top: 32px;
   height: 160px;
   width: 100%;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: auto;
+  width: inherit;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: auto;
+  width: inherit;
+}
+
+.firstProj {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: inherit;
+  border: none;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: inherit;
+  margin: 0;
+  border: none;
+}
+
+.img {
+  width: 100%;
+  display: flex;
+  justify-self: flex-start;
+  align-self: stretch;
+  margin: 0;
+  object-fit: cover;
+  border: none;
+}
+
+.infoBox {
+  background-color: #1a2236;
+  margin: 0;
+  border: 0;
+  border: none;
+}
+
+h3 {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 36px;
+  margin-bottom: 16px;
+}
+
+.projectInfo {
+  border: none;
+}
+
+.langList {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1a2236;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 80%;
+  font-size: 10.3334px;
+}
+
+.lang1 {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  background-color: #98dede;
+  color: #1a2236;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.lang2 {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  margin-right: 10px;
+  background-color: #98dede;
+  color: #1a2236;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.lang3 {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  background-color: #98dede;
+  color: #1a2236;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 50px;
+}
+
+.btnProj {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  background-color: #1a2236;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btnText {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btnIcon {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 13.95px;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  margin-top: 56px;
+  margin-bottom: 20px;
+  margin-right: 16px;
+}
+
+.aboutHeader {
+  margin-right: 155px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.pabout {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.myCv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  background-color: #1a2236;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.btnTextGet {
+  margin-left: 79px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+
+.btnIconDownload {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  margin-right: 79px;
+}
+
+.aboutCards {
+  margin-bottom: 16px;
+  background-color: #1c528a;
+  background-image: url(.png/ic_HT.png);
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 289px;
+  width: inherit;
+}
+
+.framworksCard {
+  margin-bottom: 16px;
+  background-color: #e2505c;
+  background-image: url(.png/ic_rectangle.png);
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 289px;
+  width: inherit;
+}
+
+.skillsCard {
+  margin-bottom: 16px;
+  background-color: #febf52;
+  background-image: url(.png/ic_skills.png);
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 289px;
+  width: inherit;
+}
+
+.langCardHeader,
+.skillCardHeader,
+.framworksCardHeader {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.langCardHeader {
+  margin-top: 50px;
+  margin-bottom: 21px;
+  margin-left: 50px;
+  margin-right: 123px;
+}
+
+.framworksCardHeader {
+  margin-top: 50px;
+  margin-bottom: 21px;
+  margin-left: 50px;
+  margin-right: 107px;
+}
+
+.skillCardHeader {
+  margin-top: 50px;
+  margin-bottom: 21px;
+  margin-left: 50px;
+  margin-right: 184px;
+}
+
+.langCardList,
+.framworksCardList,
+.skillCardList {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: white;
+  padding: 0;
+  list-style: none;
+}
+
+.langCardList {
+  margin-left: 50px;
+  margin-bottom: 53px;
+  margin-right: 61px;
+}
+
+.laCardListItem::before {
+  content: "•";
+  padding-right: 5px;
+  color: white;
+}
+
+.framworksCardList {
+  margin-left: 50px;
+  margin-bottom: 53px;
+  margin-right: 121px;
+}
+
+.skillCardList {
+  margin-left: 50px;
+  margin-bottom: 53px;
+  margin-right: 151px;
 }
