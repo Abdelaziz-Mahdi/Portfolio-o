@@ -26,6 +26,23 @@ body {
   width: 111px;
 }
 
+#footerHeader {
+  display: flex;
+  justify-content: space-between;
+  height: 74px;
+}
+
+.footerHeader {
+  background-image: url(".png/geometry_1.png");
+  background-color: white;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: inherit;
+  width: 111px;
+}
+
 .strip {
   width: 20px;
   height: 2px;
