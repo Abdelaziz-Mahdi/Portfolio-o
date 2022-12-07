@@ -134,6 +134,12 @@ p {
   width: 100%;
 }
 
+.works {
+  display: grid;
+  grid-template-columns: auto;
+  width: inherit;
+}
+
 .projectsContainer {
   display: grid;
   grid-template-columns: auto;
