@@ -626,7 +626,7 @@ label {
     justify-content: center;
     height: initial;
     width: 100%;
-    box-shadow: 0px 0.5px 0px #dddfe6;
+    box-shadow: 0 0.5px 0 #dddfe6;
   }
 
   #mainHeader ul {
