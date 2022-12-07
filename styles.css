@@ -589,7 +589,8 @@ label {
     display: flex;
     flex-direction: column;
     align-content: stretch;
-    width: 1440px;
+    justify-content: stretch;
+    width: auto;
   }
 
   .headerv,
@@ -710,7 +711,7 @@ label {
   }
 
   .works {
-    width: 100%;
+    width: inherit;
   }
 
   .works .btn:hover {
@@ -730,11 +731,11 @@ label {
   .projectsContainer {
     position: relative;
     display: grid;
-    grid-template-columns: 465px 15px 320px 175px 465px;
-    grid-template-rows: 558px 350px 465px 270px;
+    grid-template-columns: 32.29% 1.04% 22.22% 12.15% 32.3%;
+    grid-template-rows: 33.96% 21.3% 28.3% 16.44%;
     justify-content: stretch;
     align-content: stretch;
-    width: auto;
+    width: inherit;
   }
 
   #item1 {
@@ -897,7 +898,7 @@ label {
     grid-row-end: 5;
     background-image: url(.png/w-image-geometry_4.png);
     background-repeat: no-repeat;
-    background-position: right, top;
+    background-position: 100% 0%;
   }
 
   #item10 {
