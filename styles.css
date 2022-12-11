@@ -649,6 +649,9 @@ label {
     text-align: right;
     border: none;
     background-color: inherit;
+    transition-property: font-size, font-weigh;
+    transition-duration: 0.5s, 0.5s;
+    transition-delay: 0s;
   }
 
   #item2 .projInfo button {
@@ -657,6 +660,8 @@ label {
 
   #mainHeader ul button:hover {
     box-shadow: 0 1px #1a2236;
+    font-size: 18px;
+    font-weight: 600;
   }
 
   .mnuBtn {
