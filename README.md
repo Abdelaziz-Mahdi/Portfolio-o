@@ -9,6 +9,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [:movie_camera: Project Presentation](#project-presentation)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -76,8 +77,18 @@ This is an activity called Set up a 'portfolio-website' project to test the foll
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Contact me Section]**
-- [ ] **[Desktop Version]**
+- [ ] **[Mobile menu]**
+- [ ] **[Details modal]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## :movie_camera: Project Presentation <a name="project-presentation"></a>
+
+Walking through portfolio outline.
+
+- [Project Presentation Link](https://www.loom.com/share/d40dda0e19954ebc937cf4e7cee3ffdd)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
