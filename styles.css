@@ -236,7 +236,7 @@ p {
   padding-right: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .btn:hover {
@@ -769,7 +769,7 @@ label {
 
   .mnuBtn {
     padding: 0;
-    margin: 0 50 0 0;
+    margin: 0 50px 0 0;
   }
 
   #lastBtn {
@@ -834,7 +834,7 @@ label {
     font-weight: 400;
     font-size: 110px;
     line-height: 100%;
-    letter-spacing: -1;
+    letter-spacing: -1px;
     color: #1a2236;
   }
 
@@ -853,6 +853,19 @@ label {
   #works {
     width: inherit;
     margin-top: 209px;
+  }
+
+  #formSection .btn {
+    align-self: center;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
   }
 
   #works .btn:hover {
@@ -1073,7 +1086,7 @@ label {
 
   #itemFlow .imgContainer {
     order: 2;
-    width: -webkit-fill-available;
+    width: 100%;
   }
 
   #aboutMyself {
@@ -1197,19 +1210,6 @@ label {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-  }
-
-  #formSection .btn {
-    align-self: center;
-    width: auto;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
   }
 
   #formSection .startCoText {
