@@ -1,4 +1,4 @@
-function myFunction() {
+function openMenu() {
   document.getElementById('ani').style.marginLeft = '100%';
   window.location.href = 'menu.html';
 }
