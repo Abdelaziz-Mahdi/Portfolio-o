@@ -1,25 +1,25 @@
 function myFunction() {
-  document.getElementById("ani").style.marginLeft = "100%";
-  window.location.href = "menu.html";
+  document.getElementById('ani').style.marginLeft = '100%';
+  window.location.href = 'menu.html';
 }
 
 function headding() {
-  window.location.href = "index.html";
+  window.location.href = 'index.html';
 }
 
 function worksSection() {
-  window.location.href = "index.html#works";
+  window.location.href = 'index.html#works';
 }
 
 function aboutSection() {
-  window.location.href = "index.html#aboutMyself";
+  window.location.href = 'index.html#aboutMyself';
 }
 
 function footerSection() {
-  window.location.href = "index.html#footerV";
+  window.location.href = 'index.html#footerV';
 }
 
-let mediaQuery = window.matchMedia("(min-width: 768px)");
+const mediaQuery = window.matchMedia('(min-width: 768px)');
 
 function screenSize(i) {
   if (i.matches) {
