@@ -5,6 +5,97 @@ body {
   height: auto;
 }
 
+#mBody {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 50%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#mBody ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mHeader {
+  height: 24vh;
+  flex-grow: 2;
+  display: flex;
+}
+
+#mHeaderV {
+  background-image: url(/.png/image_geometry_menu_1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 24vh;
+  width: 82vw;
+}
+
+#mHeading {
+  height: 46vh;
+  flex-grow: 5;
+}
+
+#mHeading button {
+background: none;
+border: none;
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 300%;
+text-align: center;
+}
+
+#mHeading nav {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mHeading ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+  margin-top: 30px;
+}
+
+#mMenu {
+  height: 16px;
+  width: 16px;
+  padding: 0;
+  border: 0;
+  background:none;
+  margin: 7%;
+}
+
+#mFooterV {
+  background-image: url(/.png/image_geometry_menu_2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  height: 30vh;
+  flex-grow: 3;
+}
+
 #mainHeader {
   display: flex;
   justify-content: space-between;
@@ -66,9 +157,10 @@ body {
 .firstSection {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  height: auto;
+  min-height: calc(100vh - 74px);
 }
 
 .midSection {
@@ -162,7 +254,7 @@ p {
   width: 100%;
 }
 
-.works {
+#works {
   display: grid;
   grid-template-columns: auto;
   width: inherit;
@@ -747,19 +839,19 @@ label {
     margin-top: 17px;
   }
 
-  .works {
+  #works {
     width: inherit;
     margin-top: 209px;
   }
 
-  .works .btn:hover {
+  #works .btn:hover {
     background-color: white;
     color: #1a2236;
     filter: invert(100%);
     border: 1px solid black;
   }
 
-  .works .btn:active {
+  #works .btn:active {
     background-color: white;
     color: #1a2236;
     filter: invert(100%);
@@ -973,7 +1065,7 @@ label {
     width: -webkit-fill-available;
   }
 
-  .aboutMyself {
+  #aboutMyself {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -1201,7 +1293,7 @@ label {
     margin-bottom: 0;
   }
 
-  .footerV {
+  #footerV {
     background-image: url(https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/.png/image-geometry_7.png);
     width: 351px;
     height: 351px;
