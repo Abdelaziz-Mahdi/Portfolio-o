@@ -4,21 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
     <title>portfolio-website</title>
   </head>
 
-  <body>
+  <body id="ani">
     <header id="mainHeader">
       <div class="headerv"></div>
       <nav>
-        <button class="menu" aria-label="menu" type="button">
+        <button class="menu" aria-label="menu" type="button" onclick="myFunction();">
           <div class="strip"></div>
           <div class="strip"></div>
           <div class="strip"></div>
@@ -50,7 +48,7 @@
       </div>
       <div class="foterv"></div>
     </section>
-    <section class="works">
+    <section id="works">
       <div class="projectsContainer">
         <div id="item1">
           <h2 class="worksHeader">Projects</h2>
@@ -188,7 +186,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutMyself">
+    <section id="aboutMyself">
       <div class="aboutSection">
         <div id="aboutP1">
           <h2 class="aboutHeader">About</h2>
@@ -298,7 +296,7 @@
           </ul>
         </form>
       </section>
-      <div class="footerV"></div>
+      <div id="footerV"></div>
       <footer id="contactFooter">
         <div id="footerContainer">
           <button class="myResume">
