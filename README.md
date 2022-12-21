@@ -64,11 +64,15 @@ This is an activity called Set up a 'portfolio-website' project to test the foll
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Abdelaziz Mohamed**
+👤 **Abdelaziz Ali**
 
 - GitHub: [@Abdelaziz-Ali](https://github.com/Abdelaziz-Ali)
 - Twitter: [@AbdelazizDV](https://twitter.com/AbdelazizDV)
 - LinkedIn: [in/abdelaziz-ali-dev](https://www.linkedin.com/in/abdelaziz-ali-dev)
+
+👤 **Stephen Chibundu Onyeje**
+
+- GitHub: [@chibunduonyeje1](https://github.com/chibunduonyeje1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
