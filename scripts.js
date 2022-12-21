@@ -1,34 +1,40 @@
-// eslint-disable-next-line  no-unused-vars
-function openMenu() {
-  document.getElementById('ani').style.marginLeft = '100%';
-  window.location.href = 'menu.html';
-}
+const menuBtn = document.getElementById('menu');
+const closeMenu = document.getElementById('mMenu');
+const menuCo = document.getElementById('mBody');
+const mBtnHello = document.getElementById('mBtnHello');
+const mBtnPortfolio = document.getElementById('mBtnPortfolio');
+const mBtnAbout = document.getElementById('mBtnAbout');
+const mBtnContact = document.getElementById('mBtnContact');
 
-// eslint-disable-next-line  no-unused-vars
-function headding() {
-  window.location.href = 'index.html';
-}
+mBtnHello.addEventListener('click', () => {
+  menuCo.style.display = 'none';
+});
 
-// eslint-disable-next-line  no-unused-vars
-function worksSection() {
-  window.location.href = 'index.html#works';
-}
+mBtnPortfolio.addEventListener('click', () => {
+  menuCo.style.display = 'none';
+});
 
-// eslint-disable-next-line  no-unused-vars
-function aboutSection() {
-  window.location.href = 'index.html#aboutMyself';
-}
+mBtnAbout.addEventListener('click', () => {
+  menuCo.style.display = 'none';
+});
 
-// eslint-disable-next-line  no-unused-vars
-function footerSection() {
-  window.location.href = 'index.html#footerV';
-}
+mBtnContact.addEventListener('click', () => {
+  menuCo.style.display = 'none';
+});
+
+closeMenu.addEventListener('click', () => {
+  menuCo.style.display = 'none';
+});
+
+menuBtn.addEventListener('click', () => {
+  menuCo.style.display = 'block';
+});
 
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 
 function screenSize(i) {
   if (i.matches) {
-    headding();
+    menuCo.style.display = 'none';
   }
 }
 mediaQuery.addListener(screenSize);
