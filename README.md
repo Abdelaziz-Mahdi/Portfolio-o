@@ -77,7 +77,6 @@ This is an activity called Set up a 'portfolio-website' project to test the foll
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Mobile menu]**
 - [ ] **[Details modal]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
