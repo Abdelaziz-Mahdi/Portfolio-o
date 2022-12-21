@@ -55,7 +55,11 @@ body {
   flex-grow: 5;
 }
 
-a, a:hover, a:visited, a:focus, a:active  {
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
   outline: 0;
