@@ -43,7 +43,7 @@ body {
 }
 
 #mHeaderV {
-  background-image: url(/.png/image_geometry_menu_1.svg);
+  background-image: url(https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/1ac84af5f67a34b0cb86a6a9985a6e6ef304d6af/.png/image_geometry_menu_1.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 24vh;
@@ -113,7 +113,7 @@ a:active {
 }
 
 #mFooterV {
-  background-image: url(/.png/image_geometry_menu_2.svg);
+  background-image: url(https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/1ac84af5f67a34b0cb86a6a9985a6e6ef304d6af/.png/image_geometry_menu_2.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
