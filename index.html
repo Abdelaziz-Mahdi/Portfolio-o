@@ -11,20 +11,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js"></script>
+
     <title>portfolio-website</title>
   </head>
 
   <body id="ani">
+    <section id="mBody">
+      <header id="mHeader">
+        <div id="mHeaderV"></div>
+        <button id="mMenu" title="close" type="button">
+          <img alt="Menu" src="/.png/Union.svg" />
+        </button>
+      </header>
+      <section id="mHeading">
+        <nav>
+          <ul>
+            <li>
+              <a id="mBtnHello" type="button" title="Hello">Hello</a>
+            </li>
+            <li>
+              <a id="mBtnPortfolio" type="button" title="Portfolio" href="#works">Portfolio</a>
+            </li>
+            <li>
+              <a id="mBtnAbout" type="button" title="About" href="#aboutMyself">About</a>
+            </li>
+            <li>
+              <a id="mBtnContact" type="button" title="Contact" href="#contactMe">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <footer>
+        <div id="mFooterV"></div>
+      </footer>
+    </section>
+
     <header id="mainHeader">
       <div class="headerv"></div>
       <nav>
-        <button
-          class="menu"
-          aria-label="menu"
-          type="button"
-          onclick="openMenu();"
-        >
+        <button id="menu" aria-label="menu" type="button">
           <div class="strip"></div>
           <div class="strip"></div>
           <div class="strip"></div>
@@ -37,6 +62,7 @@
         </ul>
       </nav>
     </header>
+
     <section class="firstSection">
       <div class="midSection">
         <div id="dataCo">
@@ -285,7 +311,7 @@
         </div>
       </div>
     </section>
-    <footer class="contactMe">
+    <footer id="contactMe" class="contactMe">
       <header id="footerHeader"><div class="footerHeader"></div></header>
       <section id="formSection">
         <h2>Get started</h2>
@@ -402,5 +428,6 @@
         </div>
       </footer>
     </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
