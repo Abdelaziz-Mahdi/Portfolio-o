@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="flexCo">
+      <header class="popHeader">
+        <h4 class="">Project name goes here</h4>
+        <i class="popClose" title="close" type="button"></i>
+      </header>
+      <ul class="poplangList">
+        <li class="lang1">HTML/CSS</li>
+        <li class="lang2">Ruby on Rails</li>
+        <li class="lang3">JavaScript</li>
+      </ul>
+      <img id="popMainImage" src="png/Rectangle2.png" alt="${work.alt}" />
+      <div class="popImgContainer">
+        <img class="popSecImage" src="png/Rectangle2.png" alt="${work.alt}" />
+        <img class="popSecImage" src="png/Rectangle2.png" alt="${work.alt}" />
+        <img class="popSecImage" src="png/Rectangle2.png" alt="${work.alt}" />
+        <img class="popSecImage" src="png/Rectangle2.png" alt="${work.alt}" />
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi <br><br>
+        Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi.
+      </p>
+
+      <ul class="ulBTN">
+        <li>
+          <button class="btn btnProj seeLive">
+            <div class="btnText">See Live</div>
+            <div id="btnIcon">
+              <img src="png/ic_link.svg" alt="${work.altArrow}" />
+            </div>
+          </button>
+        </li>
+        <li id="seeSourceLi">
+          <button class="btn btnProj seeSource">
+            <div class="btnText">See Source</div>
+            <div id="btnIcon">
+              <img src="png/ic_github_b.svg" alt="${work.altArrow}" />
+            </div>
+          </button>
+        </li>
+      </ul>
+      <ul class="ulNav">
+        <li><i id="popNavArrowL"></i><a href="#">Previous project</a></li>
+        <li id="ulNavLiR">
+          <a id="ulNavLiRA" href="#">Next project</a><i id="popNavArrowR"></i>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
