@@ -5,47 +5,68 @@ const mBtnHello = document.getElementById('mBtnHello');
 const mBtnPortfolio = document.getElementById('mBtnPortfolio');
 const mBtnAbout = document.getElementById('mBtnAbout');
 const mBtnContact = document.getElementById('mBtnContact');
+const bodyVis = document.getElementById('ani');
+
+
 
 mBtnHello.addEventListener('click', () => {
   menuCo.style.display = 'none';
+  bodyVis.style.position = 'static';
+  bodyVis.style.overflow = 'auto';
 });
 
 mBtnPortfolio.addEventListener('click', () => {
   menuCo.style.display = 'none';
+  bodyVis.style.position = 'static';
+  bodyVis.style.overflow = 'auto';
 });
 
 mBtnAbout.addEventListener('click', () => {
   menuCo.style.display = 'none';
+  bodyVis.style.position = 'static';
+  bodyVis.style.overflow = 'auto';
 });
 
 mBtnContact.addEventListener('click', () => {
   menuCo.style.display = 'none';
+  bodyVis.style.position = 'static';
+  bodyVis.style.overflow = 'auto';
 });
 
 closeMenu.addEventListener('click', () => {
   menuCo.style.display = 'none';
+  bodyVis.style.position = 'static';
+  bodyVis.style.overflow = 'auto';
 });
 
 menuBtn.addEventListener('click', () => {
   menuCo.style.display = 'block';
+  bodyVis.style.position = 'sticky';
+  bodyVis.style.overflow = 'hidden';
 });
+
+
+
 
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 
 function screenSize(i) {
   if (i.matches) {
     menuCo.style.display = 'none';
+    bodyVis.style.position = 'static';
+    bodyVis.style.overflow = 'auto';
   }
 }
 mediaQuery.addListener(screenSize);
 
 /* Projects Details Array */
+
 const projectsArray = [
   {
     id: 0,
     title: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     urlMainImg: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle1.png',
     urlThumps1: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle2.png',
@@ -61,7 +82,7 @@ const projectsArray = [
     id: 1,
     title: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     urlMainImg: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle2.png',
     urlThumps1: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle3.png',
@@ -77,7 +98,7 @@ const projectsArray = [
     id: 2,
     title: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     urlMainImg: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle3.png',
     urlThumps1: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle4.png',
@@ -93,7 +114,7 @@ const projectsArray = [
     id: 3,
     title: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     urlMainImg: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle4.png',
     urlThumps1: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle5.png',
@@ -109,7 +130,7 @@ const projectsArray = [
     id: 4,
     title: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     urlMainImg: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle5.png',
     urlThumps1: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle6.png',
@@ -125,7 +146,7 @@ const projectsArray = [
     id: 5,
     title: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     urlMainImg: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle6.png',
     urlThumps1: 'https://raw.githubusercontent.com/Abdelaziz-Ali/Portfolio/main/png/Rectangle1.png',
@@ -140,17 +161,20 @@ const projectsArray = [
   }
 ];
 
+
+  
 /* Works section markup*/
 
 const worksHtml = () => {
   const works = document.getElementById('works');
-  works.innerHTML += `<div id="item1">
+  works.innerHTML += `
+  <div id="item1">
   <h2 class="worksHeader">Projects</h2>
   <div id="worksV1"></div>
   </div>`;
   projectsArray.forEach((work) => {
     const workCard = document.createElement('li');
-    workCard.classList.add('project-card'+ work.id);
+    workCard.classList.add('project-card'+ work.id, 'pjc' );
     workCard.innerHTML += `
       <div id="item2" class="firstProj">
       <div class="imgContainer">
@@ -167,7 +191,7 @@ const worksHtml = () => {
             <li class="lang2">${work.technologies[1]}</li>
             <li class="lang3">${work.technologies[2]}</li>
           </ul>
-          <button class="btn btnProj">
+          <button id="showDialog${work.id}" class="btn btnProj">
             <div class="btnText">See this project</div>
             <div class="btnIcon">
                <img
@@ -178,16 +202,128 @@ const worksHtml = () => {
           </button>
         </div>
       </div>
-    </div>`;
+    </div>
+    <dialog id="favDialog">
+  <section class="flexCo">
+    <header class="popHeader">
+      <h4 class="">${work.title}</h4>
+      <i id="closeModal" class="close-modal popClose" title="close" type="button"></i>
+    </header>
+    <ul class="poplangList">
+      <li class="lang1">${work.technologies[0]}</li>
+      <li class="lang2">${work.technologies[1]}</li>
+      <li class="lang3">${work.technologies[2]}</li>
+    </ul>
+    <img id="popMainImage" src="png/Rectangle2.png" alt="" />
+    <div class="popImgContainer">
+      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
+      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
+      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
+      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
+    </div>
+  
+    <p>${work.description}</p>
+    <ul class="ulBTN">
+      <li>
+        <button class="btn btnProj seeLive">
+          <div class="btnText">See Live</div>
+          <div id="btnIcon">
+            <img src="png/ic_link.svg" alt="" />
+          </div>
+        </button>
+      </li>
+      <li id="seeSourceLi">
+        <button class="btn btnProj seeSource">
+          <div class="btnText">See Source</div>
+          <div id="btnIcon">
+            <img src="png/ic_github_b.svg" alt="$" />
+          </div>
+        </button>
+      </li>
+    </ul>
+    <ul class="ulNav">
+      <li><i id="popNavArrowL"></i><a href="#">Previous project</a></li>
+      <li id="ulNavLiR">
+        <a id="ulNavLiRA" href="#">Next project</a><i id="popNavArrowR"></i>
+      </li>
+    </ul>
+  </section>
+  </dialog>`;
     works.appendChild(workCard);
   });
   works.innerHTML += `
     <div id="item4"></div>
     <div id="item7"></div>
     <div id="item8"></div>
-    <div id="item9"></div>`;
+    <div id="item9"></div>`
+    ;
+    const favDialog = document.querySelector('#favDialog');
+    /*array.forEach(element => {
+      
+    });*/
+    for (let i = 0; i < projectsArray.length; i += 1) {
+      const showButton = document.querySelector(`#showDialog${projectsArray[i].id}`);
+      showButton.addEventListener('click', () => {
+        favDialog.showModal();
+        bodyVis.style.position = 'sticky';
+        bodyVis.style.overflow = 'hidden';
+      }); }
+
+/*
+    const showButton = document.querySelector('#showDialog');
+     workCard.forEach(showButton => {
+      showButton.addEventListener('click', () => {
+        favDialog.showModal();
+        bodyVis.style.position = 'sticky';
+        bodyVis.style.overflow = 'hidden';
+      });
+     }); */
+
+    const closeButton = document.querySelector('.close-modal');
+    closeButton.addEventListener('click', () => {
+      favDialog.close();
+      
+      bodyVis.style.position = 'static';
+      bodyVis.style.overflow = 'auto';
+    });
+      
+    /*
+    const showButton = document.querySelector('#showDialog');
+    showButton.addEventListener('click', () => {
+      favDialog.showModal();
+      bodyVis.style.position = 'sticky';
+      bodyVis.style.overflow = 'hidden';
+    });
+*/
+
 };
+/*
+function myFunction() {
+  works.removeEventListener('click', () => {
+    favDialog.showModal();
+    /*bodyVis.style.position = 'sticky';
+    bodyVis.style.overflow = 'hidden';
+  });
+}
+
+*/
+
+  
+
+// "Update details" button opens the <dialog> modally
+/*const worksActivateLinkHandler = () => {
+  
+  const workCards = document.querySelectorAll('.works');
+  workCards.forEach((work) => {
+    
+    work.addEventListener('click', favDialog.showModal());
+  });
+};*/
+
 
 window.onload = () => {
+
   worksHtml();
+  /*worksActivateLinkHandler();*/
 };
+
