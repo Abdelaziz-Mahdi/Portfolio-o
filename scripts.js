@@ -163,7 +163,7 @@ const projectsArray = [
 
 
   
-/* Works section markup*/
+/* Works and popup section markup*/
 
 const worksHtml = () => {
   const works = document.getElementById('works');
@@ -207,38 +207,38 @@ const worksHtml = () => {
   <section class="flexCo">
     <header class="popHeader">
       <h4 class="">${work.title}</h4>
-      <i id="closeModal" class="close-modal popClose" title="close" type="button"></i>
+      <button id="closeModal" class="close-modal popClose" title="close" type="button"></button>
     </header>
     <ul class="poplangList">
       <li class="lang1">${work.technologies[0]}</li>
       <li class="lang2">${work.technologies[1]}</li>
       <li class="lang3">${work.technologies[2]}</li>
     </ul>
-    <img id="popMainImage" src="png/Rectangle2.png" alt="" />
+    <img id="popMainImage" src=${work.urlMainImg} alt="" />
     <div class="popImgContainer">
-      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
-      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
-      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
-      <img class="popSecImage" src="png/Rectangle2.png" alt="" />
+      <img class="popSecImage" src=${work.urlThumps1} alt="" />
+      <img class="popSecImage" src=${work.urlThumps2} alt="" />
+      <img class="popSecImage" src=${work.urlThumps3} alt="" />
+      <img class="popSecImage" src=${work.urlThumps4} alt="" />
     </div>
   
     <p>${work.description}</p>
     <ul class="ulBTN">
       <li>
-        <button class="btn btnProj seeLive">
+      <a class="btn btnProj seeLive" href="${work.live}">
           <div class="btnText">See Live</div>
           <div id="btnIcon">
             <img src="png/ic_link.svg" alt="" />
           </div>
-        </button>
+        </a>
       </li>
       <li id="seeSourceLi">
-        <button class="btn btnProj seeSource">
+        <a href="${work.source}" class="btn btnProj seeSource">
           <div class="btnText">See Source</div>
           <div id="btnIcon">
             <img src="png/ic_github_b.svg" alt="$" />
           </div>
-        </button>
+        </a>
       </li>
     </ul>
     <ul class="ulNav">
@@ -258,9 +258,7 @@ const worksHtml = () => {
     <div id="item9"></div>`
     ;
     const favDialog = document.querySelector('#favDialog');
-    /*array.forEach(element => {
-      
-    });*/
+
     for (let i = 0; i < projectsArray.length; i += 1) {
       const showButton = document.querySelector(`#showDialog${projectsArray[i].id}`);
       showButton.addEventListener('click', () => {
@@ -269,16 +267,6 @@ const worksHtml = () => {
         bodyVis.style.overflow = 'hidden';
       }); }
 
-/*
-    const showButton = document.querySelector('#showDialog');
-     workCard.forEach(showButton => {
-      showButton.addEventListener('click', () => {
-        favDialog.showModal();
-        bodyVis.style.position = 'sticky';
-        bodyVis.style.overflow = 'hidden';
-      });
-     }); */
-
     const closeButton = document.querySelector('.close-modal');
     closeButton.addEventListener('click', () => {
       favDialog.close();
@@ -286,44 +274,8 @@ const worksHtml = () => {
       bodyVis.style.position = 'static';
       bodyVis.style.overflow = 'auto';
     });
-      
-    /*
-    const showButton = document.querySelector('#showDialog');
-    showButton.addEventListener('click', () => {
-      favDialog.showModal();
-      bodyVis.style.position = 'sticky';
-      bodyVis.style.overflow = 'hidden';
-    });
-*/
-
 };
-/*
-function myFunction() {
-  works.removeEventListener('click', () => {
-    favDialog.showModal();
-    /*bodyVis.style.position = 'sticky';
-    bodyVis.style.overflow = 'hidden';
-  });
-}
-
-*/
-
-  
-
-// "Update details" button opens the <dialog> modally
-/*const worksActivateLinkHandler = () => {
-  
-  const workCards = document.querySelectorAll('.works');
-  workCards.forEach((work) => {
-    
-    work.addEventListener('click', favDialog.showModal());
-  });
-};*/
-
 
 window.onload = () => {
-
   worksHtml();
-  /*worksActivateLinkHandler();*/
 };
-
