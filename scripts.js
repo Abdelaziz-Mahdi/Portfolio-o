@@ -7,8 +7,6 @@ const mBtnAbout = document.getElementById('mBtnAbout');
 const mBtnContact = document.getElementById('mBtnContact');
 const bodyVis = document.getElementById('ani');
 
-
-
 mBtnHello.addEventListener('click', () => {
   menuCo.style.display = 'none';
   bodyVis.style.position = 'static';
