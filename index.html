@@ -159,7 +159,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna.
         </p>
-        <form action="https://formspree.io/f/xbjbqokr" method="POST">
+        <form id="form" action="https://formspree.io/f/xbjbqokr" method="POST">
           <ul>
             <li>
               <ul id="contactInGrid">
@@ -177,8 +177,9 @@
                 </li>
                 <li>
                   <div class="inputDiv">
-                    <label for="name">Your email</label>
+                    <label for="email">Your email</label>
                     <input
+                      id="mail"
                       type="email"
                       name="email"
                       required="true"
@@ -190,7 +191,7 @@
             </li>
             <li>
               <div id="hideBorder" class="inputDiv">
-                <label id="hide" for="name">Message</label>
+                <label id="hide" for="Message">Message</label>
                 <textarea
                   name="message"
                   required="true"
