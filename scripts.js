@@ -223,8 +223,8 @@ const worksHtml = () => {
     <p>${work.description}</p>
     <ul class="ulBTN">
       <li>
-      <a class="btn btnProj seeLive" href="${work.live}">
-          <div class="btnText">See Live</div>
+      <a class="btn btnProj" href="${work.live}">
+          <div class="btnText" id='seeLive'>See Live</div>
           <div id="btnIcon">
             <img src="png/ic_link.svg" alt="" />
           </div>
