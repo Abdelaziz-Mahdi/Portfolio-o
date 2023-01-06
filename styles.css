@@ -592,10 +592,6 @@ h3 {
   margin: 0 39px 32px 0;
 }
 
-#formSection p {
-  margin: 0 0 32px 0;
-}
-
 #formSection ul {
   list-style: none;
   padding: 0;
@@ -670,6 +666,37 @@ label {
   border: 1px solid #1a2236;
 }
 
+.flexCo .btn {
+  background-color: white;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.flexCo .btn:hover {
+  background-color: white;
+  color: #1a2236;
+  filter: invert(#1a2236);
+  border: 1px solid white;
+}
+
+.flexCo .btn:active {
+  background-color: white;
+  color: #1a2236;
+  filter: invert(#1a2236);
+  border: 2px solid white;
+}
+
+.flexCo p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1a2236;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
 #formSection .btn {
   width: 100%;
 }
@@ -725,10 +752,13 @@ label {
   border: none;
 }
 
+#formSection p {
+  margin: 0 0 32px 0;
+}
+
 /* Pop up */
 
 #favDialog::backdrop {
-
   background: rgba(26, 34, 54, 0.95);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -781,10 +811,9 @@ label {
   align-items: center;
   justify-content: center;
   padding: 0;
-  padding-right: 17%;
+  padding-right: 5%;
   gap: 5%;
   height: 6.4vh;
-  padding-right: 5%;
   padding-top: 2%;
   box-sizing: border-box;
 }
@@ -792,7 +821,7 @@ label {
 .poplangList li {
   padding: 0;
   margin: 0;
-  background: #ffffff;
+  background: white;
   border: 0.516669px solid #1a2236;
 }
 
@@ -814,18 +843,6 @@ label {
   display: grid;
   width: 25%;
   box-sizing: border-box;
-}
-
-.flexCo p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: #1a2236;
-
-  box-sizing: border-box;
-  margin-bottom: 0;
 }
 
 .ulBTN {
@@ -860,36 +877,17 @@ label {
   margin-top: 2%;
 }
 
-.flexCo .btn {
-  background-color: white;
-  color: #1a2236;
-  border: 1px solid #1a2236;
-}
-
-.flexCo .btn:hover {
-  background-color: white;
-  color: #1a2236;
-  filter: invert(#1a2236);
-  border: 1px solid white;
-}
-
-.flexCo .btn:active {
-  background-color: white;
-  color: #1a2236;
-  filter: invert(#1a2236);
-  border: 2px solid white;
-}
-
-.flexCo .btnIcon {
+.flexCo #btnIcon {
   justify-self: right;
+  padding: 5px;
 }
 
 .flexCo .btnText {
   padding-left: 25%;
 }
 
-.seeLive {
-  padding-left: 7%;
+#seeLive {
+  padding-left: 30%;
 }
 
 .ulNav {
@@ -921,6 +919,11 @@ label {
     height: initial;
     width: 100%;
     box-shadow: 0 0.5px 0 #dddfe6;
+  }
+
+  .project-card0 .projInfo ul {
+    margin: 0;
+    width: 65%;
   }
 
   #mainHeader ul {
@@ -1048,6 +1051,10 @@ label {
     align-content: stretch;
   }
 
+  .project-card4 .btn {
+    margin-left: 20px;
+  }
+
   #formSection .btn {
     align-self: center;
     width: auto;
@@ -1107,6 +1114,18 @@ label {
     transform: rotate(-90deg);
   }
 
+  .poplangList li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+    padding: 2%;
+    margin: 0;
+    background: white;
+    border: 0.516669px solid #1a2236;
+  }
+
   .project-card0 {
     grid-column-start: 3;
     grid-column-end: 6;
@@ -1136,11 +1155,6 @@ label {
     font-weight: 700;
     font-size: 60px;
     line-height: 80%;
-  }
-
-  .project-card0 .projInfo ul {
-    margin: 0;
-    width: 65%;
   }
 
   .project-card0 .projInfo ul li {
@@ -1279,10 +1293,6 @@ label {
     flex-wrap: wrap;
   }
 
-  .project-card4 .btn {
-    margin-left: 20px;
-  }
-
   .project-card4 .imgContainer {
     order: 2;
     width: 100%;
@@ -1389,6 +1399,20 @@ label {
 
   #formSection h2 {
     margin: 0 0 40px 0;
+  }
+
+  .flexCo p {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 4%;
   }
 
   #formSection p {
@@ -1524,7 +1548,7 @@ label {
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
   }
-  
+
   #favDialog {
     border-color: rgba(26, 34, 54, 0.95);
     margin: 2%;
@@ -1538,7 +1562,7 @@ label {
     align-content: center;
     padding: 2%;
     box-sizing: border-box;
-    border: 5%;
+    border: 5px;
     border-color: rgba(26, 34, 54, 0.95);
     height: auto;
   }
@@ -1589,18 +1613,6 @@ label {
     box-sizing: border-box;
   }
 
-  .poplangList li {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    flex-basis: content;
-    padding: 2%;
-    margin: 0;
-    background: #ffffff;
-    border: 0.516669px solid #1a2236;
-  }
-
   .lang2 {
     width: 120%;
     flex-basis: 40%;
@@ -1623,26 +1635,12 @@ label {
   }
 
   .popImgContainer img:active {
-    border: 1px solid #1A2236;
+    border: 1px solid #1a2236;
   }
 
   .popSecImage {
     max-width: 25%;
     box-sizing: border-box;
-  }
-
-  .flexCo p {
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    color: #1a2236;
-    box-sizing: border-box;
-    margin-bottom: 0;
-    margin-top: 4%;
   }
 
   .ulBTN {
@@ -1675,7 +1673,7 @@ label {
     margin-right: 7%;
     height: 3vh;
     text-align: justify;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -1698,6 +1696,12 @@ label {
     padding-left: 0;
   }
 
+  #btnIcon {
+    justify-self: right;
+    align-items: center;
+    display: flex;
+  }
+
   .flexCo .btn:hover,
   #btnIcon:hover {
     background-color: white;
@@ -1710,12 +1714,6 @@ label {
     background-color: white;
     color: #1a2236;
     filter: invert(#1a2236);
-  }
-
-  #btnIcon {
-    justify-self: right;
-    align-items: center;
-    display: flex;
   }
 
   .flexCo .btnText {
