@@ -383,3 +383,31 @@ const worksHtml = () => {
 window.onload = () => {
   worksHtml();
 };
+
+/* validate contact form */
+
+const form = document.getElementById("form");
+const email = document.getElementById("mail");
+const message = document.getElementById("message");
+const emailV = document.getElementById('mail').value;
+function validateEmail(emailField){
+  var reg = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+  if (reg.test(emailField.value) == true)
+  {
+      return false;
+  }
+  return true;
+}
+
+
+
+form.addEventListener("submit", (event) => {
+
+  if (validateEmail(email)) { 
+    message.setCustomValidity("Email must be in small letters!");
+    event.preventDefault();
+  } else {
+    message.setCustomValidity("Submmeted Succesfully");
+  }
+});
