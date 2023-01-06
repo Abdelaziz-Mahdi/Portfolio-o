@@ -389,7 +389,7 @@ window.onload = () => {
 const form = document.getElementById('form');
 
 function validateEmail(emailField) {
-  let reg = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  const reg = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
   if (!reg.test(emailField)) {
     return false;
