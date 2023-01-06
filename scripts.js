@@ -237,11 +237,11 @@ const worksHtml = () => {
         </div>
       </div>
     </div>
-    <dialog id='favDialog'>
+    <dialog id='favDialog${work.id}'>
   <section class='flexCo'>
     <header class='popHeader'>
       <h4 class=''>${work.title}</h4>
-      <button id='closeModal' class='close-modal popClose' title='close' type='button'></button>
+      <button id='closeModal' class='close-modal${work.id} popClose' title='close' type='button'></button>
     </header>
     <ul class='poplangList'>
       <li class='lang1'>${work.technologies[0]}</li>
@@ -290,23 +290,91 @@ const worksHtml = () => {
     <div id='item7'></div>
     <div id='item8'></div>
     <div id='item9'></div>`;
-  const favDialog = document.querySelector('#favDialog');
 
-  for (let i = 0; i < projectsArray.length; i += 1) {
-    const showButton = document.querySelector(
-      `#showDialog${projectsArray[i].id}`,
-    );
-    showButton.addEventListener('click', () => {
-      favDialog.showModal();
-      bodyVis.style.position = 'sticky';
-      bodyVis.style.overflow = 'hidden';
-    });
-  }
+  const favDialog0 = document.querySelector('#favDialog0');
+  const showButton0 = document.querySelector('#showDialog0');
+  showButton0.addEventListener('click', () => {
+    favDialog0.showModal();
+    bodyVis.style.position = 'sticky';
+    bodyVis.style.overflow = 'hidden';
+  });
 
-  const closeButton = document.querySelector('.close-modal');
-  closeButton.addEventListener('click', () => {
-    favDialog.close();
+  const favDialog1 = document.querySelector('#favDialog1');
+  const showButton1 = document.querySelector('#showDialog1');
+  showButton1.addEventListener('click', () => {
+    favDialog1.showModal();
+    bodyVis.style.position = 'sticky';
+    bodyVis.style.overflow = 'hidden';
+  });
+  const favDialog2 = document.querySelector('#favDialog2');
+  const showButton2 = document.querySelector('#showDialog2');
+  showButton2.addEventListener('click', () => {
+    favDialog2.showModal();
+    bodyVis.style.position = 'sticky';
+    bodyVis.style.overflow = 'hidden';
+  });
 
+  const favDialog3 = document.querySelector('#favDialog3');
+  const showButton3 = document.querySelector('#showDialog3');
+  showButton3.addEventListener('click', () => {
+    favDialog3.showModal();
+    bodyVis.style.position = 'sticky';
+    bodyVis.style.overflow = 'hidden';
+  });
+
+  const favDialog4 = document.querySelector('#favDialog4');
+  const showButton4 = document.querySelector('#showDialog4');
+  showButton4.addEventListener('click', () => {
+    favDialog4.showModal();
+    bodyVis.style.position = 'sticky';
+    bodyVis.style.overflow = 'hidden';
+  });
+  const favDialog5 = document.querySelector('#favDialog5');
+  const showButton5 = document.querySelector('#showDialog5');
+  showButton5.addEventListener('click', () => {
+    favDialog5.showModal();
+    bodyVis.style.position = 'sticky';
+    bodyVis.style.overflow = 'hidden';
+  });
+
+  const closeButton0 = document.querySelector('.close-modal0');
+  closeButton0.addEventListener('click', () => {
+    favDialog0.close();
+    bodyVis.style.position = 'static';
+    bodyVis.style.overflow = 'auto';
+  });
+
+  const closeButton1 = document.querySelector('.close-modal1');
+  closeButton1.addEventListener('click', () => {
+    favDialog1.close();
+    bodyVis.style.position = 'static';
+    bodyVis.style.overflow = 'auto';
+  });
+
+  const closeButton2 = document.querySelector('.close-modal2');
+  closeButton2.addEventListener('click', () => {
+    favDialog2.close();
+    bodyVis.style.position = 'static';
+    bodyVis.style.overflow = 'auto';
+  });
+
+  const closeButton3 = document.querySelector('.close-modal3');
+  closeButton3.addEventListener('click', () => {
+    favDialog3.close();
+    bodyVis.style.position = 'static';
+    bodyVis.style.overflow = 'auto';
+  });
+
+  const closeButton4 = document.querySelector('.close-modal4');
+  closeButton4.addEventListener('click', () => {
+    favDialog4.close();
+    bodyVis.style.position = 'static';
+    bodyVis.style.overflow = 'auto';
+  });
+
+  const closeButton5 = document.querySelector('.close-modal5');
+  closeButton5.addEventListener('click', () => {
+    favDialog5.close();
     bodyVis.style.position = 'static';
     bodyVis.style.overflow = 'auto';
   });
