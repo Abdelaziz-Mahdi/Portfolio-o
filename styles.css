@@ -285,6 +285,7 @@ p {
   display: grid;
   grid-template-columns: auto;
   width: inherit;
+  list-style: none;
 }
 
 .projectsContainer {
@@ -297,7 +298,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  width: inherit;
   border: none;
 }
 
@@ -592,10 +592,6 @@ h3 {
   margin: 0 39px 32px 0;
 }
 
-#formSection p {
-  margin: 0 0 32px 0;
-}
-
 #formSection ul {
   list-style: none;
   padding: 0;
@@ -670,6 +666,37 @@ label {
   border: 1px solid #1a2236;
 }
 
+.flexCo .btn {
+  background-color: white;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.flexCo .btn:hover {
+  background-color: white;
+  color: #1a2236;
+  filter: invert(#1a2236);
+  border: 1px solid white;
+}
+
+.flexCo .btn:active {
+  background-color: white;
+  color: #1a2236;
+  filter: invert(#1a2236);
+  border: 2px solid white;
+}
+
+.flexCo p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1a2236;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
 #formSection .btn {
   width: 100%;
 }
@@ -725,6 +752,148 @@ label {
   border: none;
 }
 
+#formSection p {
+  margin: 0 0 32px 0;
+}
+
+/* Pop up */
+
+#favDialog::backdrop {
+  background: rgba(26, 34, 54, 0.95);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+#favDialog {
+  border-color: rgba(26, 34, 54, 0.95);
+}
+
+.flexCo {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-content: stretch;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popHeader {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5.4vh;
+}
+
+.popHeader h4 {
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.popClose {
+  background-image: url("png/ic_cross.svg");
+  background-color: white;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+.poplangList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-right: 5%;
+  gap: 5%;
+  height: 6.4vh;
+  padding-top: 2%;
+  box-sizing: border-box;
+}
+
+.poplangList li {
+  padding: 0;
+  margin: 0;
+  background: white;
+  border: 0.516669px solid #1a2236;
+}
+
+.popImgContainer {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: stretch;
+  width: 100%;
+  height: 5vh;
+}
+
+#popMainImage {
+  box-sizing: border-box;
+  height: 17vh;
+  max-width: 100%;
+}
+
+.popSecImage {
+  display: grid;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.ulBTN {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5%;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ulBTN li {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lang1,
+.lang2,
+.lang3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCo .btnProj {
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 0;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.flexCo #btnIcon {
+  justify-self: right;
+  padding: 5px;
+}
+
+.flexCo .btnText {
+  padding-left: 25%;
+}
+
+#seeLive {
+  padding-left: 30%;
+}
+
+.ulNav {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     display: flex;
@@ -752,6 +921,20 @@ label {
     box-shadow: 0 0.5px 0 #dddfe6;
   }
 
+  .ulBTN li {
+    width: 37%;
+  }
+
+  .ulNav li {
+    display: flex;
+    align-items: center;
+  }
+
+  .project-card0 .projInfo ul {
+    margin: 0;
+    width: 65%;
+  }
+
   #mainHeader ul {
     text-align: right;
     display: flex;
@@ -775,10 +958,6 @@ label {
     transition-property: font-size, font-weigh;
     transition-duration: 0.5s, 0.5s;
     transition-delay: 0s;
-  }
-
-  #item2 .projInfo button {
-    margin: 0;
   }
 
   #mainHeader ul button:hover {
@@ -873,6 +1052,43 @@ label {
   #works {
     width: inherit;
     margin-top: 209px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 32.29% 1.04% 22.22% 12.15% 32.3%;
+    grid-template-rows: 33.96% 21.3% 28.3% 16.44%;
+    justify-content: stretch;
+    align-content: stretch;
+  }
+
+  .project-card4 .btn {
+    margin-left: 20px;
+  }
+
+  .flexCo .btn {
+    background-color: white;
+    color: #1a2236;
+    border: 1px solid #1a2236;
+    padding-left: 0;
+  }
+
+  #btnIcon {
+    justify-self: right;
+    align-items: center;
+    display: flex;
+  }
+
+  .flexCo .btn:hover,
+  #btnIcon:hover {
+    background-color: white;
+    color: #1a2236;
+    filter: invert(#1a2236);
+  }
+
+  .flexCo .btn:active,
+  #btnIcon:active {
+    background-color: white;
+    color: #1a2236;
+    filter: invert(#1a2236);
   }
 
   #formSection .btn {
@@ -900,16 +1116,6 @@ label {
     color: #1a2236;
     filter: invert(100%);
     border: 2px solid black;
-  }
-
-  .projectsContainer {
-    position: relative;
-    display: grid;
-    grid-template-columns: 32.29% 1.04% 22.22% 12.15% 32.3%;
-    grid-template-rows: 33.96% 21.3% 28.3% 16.44%;
-    justify-content: stretch;
-    align-content: stretch;
-    width: inherit;
   }
 
   #item1 {
@@ -944,7 +1150,19 @@ label {
     transform: rotate(-90deg);
   }
 
-  #item2 {
+  .poplangList li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+    padding: 2%;
+    margin: 0;
+    background: white;
+    border: 0.516669px solid #1a2236;
+  }
+
+  .project-card0 {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
@@ -952,35 +1170,30 @@ label {
     position: relative;
   }
 
-  #item2 .infoBox {
+  .project-card0 .infoBox {
     position: absolute;
-    left: 0;
     bottom: 0;
-    margin: 0;
     width: 100%;
     height: 63%;
   }
 
-  #item2 .projInfo {
-    margin-top: 60px;
+  .project-card0 .projInfo {
+    height: 100%;
+    display: flex;
     margin-left: 60px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 
-  #item2 .projInfo h3 {
+  .project-card0 .projInfo h3 {
     margin: 0;
-    margin-bottom: 34px;
     font-weight: 700;
     font-size: 60px;
     line-height: 80%;
   }
 
-  #item2 .projInfo ul {
-    margin: 0;
-    width: 65%;
-    margin-bottom: 60px;
-  }
-
-  #item2 .projInfo ul li {
+  .project-card0 .projInfo ul li {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 12px;
@@ -993,6 +1206,8 @@ label {
     line-height: 27px;
     color: #1a2236;
     background-color: white;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .btnIcon {
@@ -1001,11 +1216,29 @@ label {
     filter: invert(100%);
   }
 
-  #item2 .projInfo .lang1 {
+  .lang1,
+  .lang2,
+  .lang3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 42%;
+    margin-right: 7%;
+    height: 3vh;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    color: #1a2236;
+  }
+
+  .project-card0 .projInfo .lang1 {
     margin-left: 0;
   }
 
-  #item3 {
+  .project-card1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -1014,7 +1247,7 @@ label {
     align-items: flex-end;
   }
 
-  #item3 .infoBox {
+  .project-card1 .infoBox {
     display: none;
   }
 
@@ -1029,25 +1262,25 @@ label {
     background-repeat: no-repeat;
   }
 
-  #item5 {
+  .project-card5 {
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
-  #item5 .infoBox {
+  .project-card5 .infoBox {
     display: none;
   }
 
-  #item6 {
+  .project-card2 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
-  #item6 .infoBox {
+  .project-card2 .infoBox {
     display: none;
   }
 
@@ -1081,30 +1314,40 @@ label {
     background-position: 100% 0%;
   }
 
-  #item10 {
+  .project-card3 {
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
   }
 
-  #item10 .infoBox {
+  .project-card3 .infoBox {
     display: none;
   }
 
-  #itemFlow {
+  .project-card4 {
     position: absolute;
     right: 0;
     top: 620px;
     display: grid;
     width: 32.3%;
+    height: 350px;
   }
 
-  #itemFlow .infoBox {
+  .project-card4 .infoBox {
+    height: 163px;
     order: 1;
   }
 
-  #itemFlow .imgContainer {
+  .project-card4 .projInfo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .project-card4 .imgContainer {
     order: 2;
     width: 100%;
   }
@@ -1210,6 +1453,20 @@ label {
 
   #formSection h2 {
     margin: 0 0 40px 0;
+  }
+
+  .flexCo p {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 4%;
   }
 
   #formSection p {
@@ -1334,5 +1591,197 @@ label {
     justify-self: end;
     background-position: left;
     float: right;
+  }
+
+  /* ------------------------------
+  -------------------------------Pop up-------
+  ------------------------------------------------------------------- */
+
+  #favDialog::backdrop {
+    background: rgba(26, 34, 54, 0.95);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  #favDialog {
+    border-color: rgba(26, 34, 54, 0.95);
+    margin: 2%;
+    max-height: 100%;
+  }
+
+  .flexCo {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: center;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 5px;
+    border-color: rgba(26, 34, 54, 0.95);
+    height: auto;
+  }
+
+  .popHeader {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 5.4%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
+
+  .popHeader h4 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80%;
+    color: #1a2236;
+  }
+
+  .popClose {
+    background-image: url("png/ic_cross.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: none;
+    max-height: 20px;
+    max-width: 20px;
+    box-sizing: border-box;
+  }
+
+  .poplangList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    gap: 5%;
+    height: 7%;
+    max-width: 45%;
+    box-sizing: border-box;
+  }
+
+  .lang2 {
+    width: 120%;
+    flex-basis: 40%;
+    flex-grow: 2;
+    flex-shrink: 1;
+  }
+
+  #popMainImage {
+    box-sizing: border-box;
+    height: 40%;
+    max-width: 100%;
+  }
+
+  .popImgContainer {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: stretch;
+    max-width: 100%;
+    height: 14%;
+  }
+
+  .popImgContainer img:active {
+    border: 1px solid #1a2236;
+  }
+
+  .popSecImage {
+    max-width: 25%;
+    box-sizing: border-box;
+  }
+
+  .ulBTN {
+    margin-left: 20%;
+    margin-right: 20%;
+    list-style: none;
+    padding: 0;
+    margin-top: 3%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+  }
+
+  #seeSourceLi {
+    margin-left: 4%;
+  }
+
+  #seeLive {
+    padding-left: 0;
+  }
+
+  .flexCo .btnProj {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+    align-items: center;
+    margin-top: 2%;
+    padding-top: 9%;
+    padding-bottom: 9%;
+  }
+
+  .flexCo .btnText {
+    padding-left: 3%;
+  }
+
+  .ulNav {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    list-style: none;
+    padding: 0;
+    margin-top: 3%;
+    max-height: 4vh;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  #ulNavLiR {
+    justify-content: flex-end;
+  }
+
+  .ulNav a {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: right;
+    color: #1a2236;
+  }
+
+  .ulNav li a {
+    width: 200px;
+    text-align: justify;
+  }
+
+  #popNavArrowL {
+    background-image: url("png/ic_arrow_left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    margin: 5%;
+  }
+
+  #popNavArrowR {
+    background-image: url("png/ic_arrow_right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    margin: 5%;
+  }
+
+  #ulNavLiRA {
+    text-align: end;
   }
 }
