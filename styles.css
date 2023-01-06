@@ -921,6 +921,15 @@ label {
     box-shadow: 0 0.5px 0 #dddfe6;
   }
 
+  .ulBTN li {
+    width: 37%;
+  }
+
+  .ulNav li {
+    display: flex;
+    align-items: center;
+  }
+
   .project-card0 .projInfo ul {
     margin: 0;
     width: 65%;
@@ -1055,6 +1064,33 @@ label {
     margin-left: 20px;
   }
 
+  .flexCo .btn {
+    background-color: white;
+    color: #1a2236;
+    border: 1px solid #1a2236;
+    padding-left: 0;
+  }
+
+  #btnIcon {
+    justify-self: right;
+    align-items: center;
+    display: flex;
+  }
+
+  .flexCo .btn:hover,
+  #btnIcon:hover {
+    background-color: white;
+    color: #1a2236;
+    filter: invert(#1a2236);
+  }
+
+  .flexCo .btn:active,
+  #btnIcon:active {
+    background-color: white;
+    color: #1a2236;
+    filter: invert(#1a2236);
+  }
+
   #formSection .btn {
     align-self: center;
     width: auto;
@@ -1178,6 +1214,24 @@ label {
     background-color: black;
     color: white;
     filter: invert(100%);
+  }
+
+  .lang1,
+  .lang2,
+  .lang3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 42%;
+    margin-right: 7%;
+    height: 3vh;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    color: #1a2236;
   }
 
   .project-card0 .projInfo .lang1 {
@@ -1655,30 +1709,8 @@ label {
     height: 5vh;
   }
 
-  .ulBTN li {
-    width: 37%;
-  }
-
   #seeSourceLi {
     margin-left: 4%;
-  }
-
-  .lang1,
-  .lang2,
-  .lang3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 42%;
-    margin-right: 7%;
-    height: 3vh;
-    text-align: justify;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 80%;
-    color: #1a2236;
   }
 
   .flexCo .btnProj {
@@ -1687,33 +1719,6 @@ label {
     margin-left: 0;
     align-items: center;
     margin-top: 2%;
-  }
-
-  .flexCo .btn {
-    background-color: white;
-    color: #1a2236;
-    border: 1px solid #1a2236;
-    padding-left: 0;
-  }
-
-  #btnIcon {
-    justify-self: right;
-    align-items: center;
-    display: flex;
-  }
-
-  .flexCo .btn:hover,
-  #btnIcon:hover {
-    background-color: white;
-    color: #1a2236;
-    filter: invert(#1a2236);
-  }
-
-  .flexCo .btn:active,
-  #btnIcon:active {
-    background-color: white;
-    color: #1a2236;
-    filter: invert(#1a2236);
   }
 
   .flexCo .btnText {
@@ -1745,11 +1750,6 @@ label {
     line-height: 27px;
     text-align: right;
     color: #1a2236;
-  }
-
-  .ulNav li {
-    display: flex;
-    align-items: center;
   }
 
   .ulNav li a {
