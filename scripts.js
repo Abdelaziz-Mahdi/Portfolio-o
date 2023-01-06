@@ -294,7 +294,7 @@ const worksHtml = () => {
 
   for (let i = 0; i < projectsArray.length; i += 1) {
     const showButton = document.querySelector(
-      `#showDialog${projectsArray[i].id}`
+      `#showDialog${projectsArray[i].id}`,
     );
     showButton.addEventListener('click', () => {
       favDialog.showModal();
