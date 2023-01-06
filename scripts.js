@@ -197,7 +197,7 @@ const projectsArray = [
   },
 ];
 
-/* Works and popup section markup*/
+/* Works and popup section markup */
 
 const worksHtml = () => {
   const works = document.getElementById('works');
@@ -208,7 +208,7 @@ const worksHtml = () => {
   </div>`;
   projectsArray.forEach((work) => {
     const workCard = document.createElement('li');
-    workCard.classList.add('project-card' + work.id, 'pjc');
+    workCard.classList.add(`project-card${work.id}`, 'pjc');
     workCard.innerHTML += `
       <div id='item2' class='firstProj'>
       <div class='imgContainer'>
